@@ -13,12 +13,16 @@ import { MockDataService } from "./services/mock-data.service";
 import { TableModule } from 'primeng/table';
 import { CreateComponent } from './create/create.component';
 import { SearchComponent } from './search/search.component';
+import { CreateEventComponent } from './create/create-event/create-event.component';
+import { CreateGlobalRegistrationComponent } from './create/create-global-registration/create-global-registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateComponent,
-    SearchComponent
+    SearchComponent,
+    CreateEventComponent,
+    CreateGlobalRegistrationComponent
   ],
   imports: [
     BrowserModule,

@@ -26,7 +26,17 @@ export class NavbarComponent implements OnInit {
   navItems = [
     {
       displayName: 'Create',
-      route: 'create'
+      // route: 'create'
+      children: [
+        {
+          displayName: 'Create Event',
+          route: 'createevent'
+        },
+        {
+          displayName: 'Create Global Registration',
+          route: 'createglobalregistration'
+        }
+       ]
     },
     {
       displayName: 'Search',
