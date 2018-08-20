@@ -40,7 +40,17 @@ export class NavbarComponent implements OnInit {
     },
     {
       displayName: 'Search',
-      route: 'search'
+      // route: 'search'
+      children: [
+        {
+          displayName: 'Search Events',
+          route: 'searchevents'
+        },
+        {
+          displayName: 'Search Documents',
+          route: 'searchdocuments'
+        }
+       ]
     }
   ];
   ngOnInit() {

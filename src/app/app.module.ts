@@ -11,10 +11,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import { MockDataService } from "./services/mock-data.service";
 import { TableModule } from 'primeng/table';
+import { AccordionModule } from 'primeng/accordion';
 import { CreateComponent } from './create/create.component';
 import { SearchComponent } from './search/search.component';
 import { CreateEventComponent } from './create/create-event/create-event.component';
 import { CreateGlobalRegistrationComponent } from './create/create-global-registration/create-global-registration.component';
+import { SearchEventsComponent } from './search/search-events/search-events.component';
+import { SearchDocumentsComponent } from './search/search-documents/search-documents.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { CreateGlobalRegistrationComponent } from './create/create-global-regist
     CreateComponent,
     SearchComponent,
     CreateEventComponent,
-    CreateGlobalRegistrationComponent
+    CreateGlobalRegistrationComponent,
+    SearchEventsComponent,
+    SearchDocumentsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ import { CreateGlobalRegistrationComponent } from './create/create-global-regist
     FormsModule,
     BrowserAnimationsModule,
     RadioButtonModule,
-    TableModule
+    TableModule,
+    AccordionModule
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]
