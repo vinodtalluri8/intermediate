@@ -156,7 +156,9 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.startDate = $event' [selectedItem]='startDate'></app-dropdown>
+              <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.startDate = $event' [selectedItem]='startDate'></app-dropdown>-->
+              <app-calender id="calender" class="calWidth" (calenderSelected)='this.startDate = $event' showIcon='true' yearNavigator='true'
+                monthNavigator='true' yearRange='2000:2030' [inputDate]='startDate'></app-calender>
             </div>
           </div>
         </div>
@@ -182,7 +184,9 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.endDate = $event' [selectedItem]='endDate'></app-dropdown>
+              <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.endDate = $event' [selectedItem]='endDate'></app-dropdown>-->
+              <app-calender id="calender" class="calWidth" (calenderSelected)='this.endDate = $event' showIcon='true' yearNavigator='true'
+                monthNavigator='true' yearRange='2000:2030' [inputDate]='endDate'></app-calender>
             </div>
           </div>
         </div>
@@ -208,7 +212,8 @@
   <br>
   <div class="row addCheckListButtons">
     <div class="col-sm-8 col-md-8 col-lg-8">
-      <app-button (click)="saveData()" [disabled]='disable()' label="Search" styleClass='button-action'></app-button>
+      <!--<app-button (click)="openSearchEventsList()" [disabled]='disable()' label="Search" styleClass='button-action'></app-button>-->
+      <app-button (click)="openSearchEventsList()" label="Search" styleClass='button-action'></app-button>
       <app-button (click)="resetAll()" label="Clear All" styleClass='button-action'></app-button>
     </div>
   </div>

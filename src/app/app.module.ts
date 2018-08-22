@@ -18,6 +18,8 @@ import { CreateEventComponent } from './create/create-event/create-event.compone
 import { CreateGlobalRegistrationComponent } from './create/create-global-registration/create-global-registration.component';
 import { SearchEventsComponent } from './search/search-events/search-events.component';
 import { SearchDocumentsComponent } from './search/search-documents/search-documents.component';
+import { SearchEventsListComponent } from './search/search-events-list/search-events-list.component';
+import { ModifyEventComponent } from './search/modify-event/modify-event.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SearchDocumentsComponent } from './search/search-documents/search-docum
     CreateEventComponent,
     CreateGlobalRegistrationComponent,
     SearchEventsComponent,
-    SearchDocumentsComponent
+    SearchDocumentsComponent,
+    SearchEventsListComponent,
+    ModifyEventComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { MenuItem, SelectItem, Message } from 'primeng/api';
 import { MockDataService } from "../../services/mock-data.service";
 
+
 @Component({
   selector: 'app-search-events',
   templateUrl: './search-events.component.html',
@@ -28,7 +29,7 @@ export class SearchEventsComponent implements OnInit {
   dataJson;
   itemsPath: MenuItem[];
 
-  constructor(private mockService: MockDataService) {
+  constructor(private mockService: MockDataService, private router: Router) {
     this.itemsPath = [
       { label: 'Search'},
       { label: 'Search Events'}];
@@ -59,27 +60,27 @@ export class SearchEventsComponent implements OnInit {
     }
   }
 
-  saveData() {
-    if (!this.disable()) {
-      this.dataJson = {
-          'investmentType' : this.investmentType,
-          'intermediateType' : this.intermediateType,
-          'location' : this.location,
-          'name' : this.name,
-          'status' : this.status,
-          'id' : this.id,
-          'agreementType' : this.agreementType,
-          'agreement' : this.agreement,
-          'event' : this.event,
-          'startDate' : this.startDate,
-          'eventStatus' : this.eventStatus,
-          'endDate' : this.endDate,
-          'active' : this.active
-      };
-    }
+  // saveData() {
+  //   if (!this.disable()) {
+  //     this.dataJson = {
+  //         'investmentType' : this.investmentType,
+  //         'intermediateType' : this.intermediateType,
+  //         'location' : this.location,
+  //         'name' : this.name,
+  //         'status' : this.status,
+  //         'id' : this.id,
+  //         'agreementType' : this.agreementType,
+  //         'agreement' : this.agreement,
+  //         'event' : this.event,
+  //         'startDate' : this.startDate,
+  //         'eventStatus' : this.eventStatus,
+  //         'endDate' : this.endDate,
+  //         'active' : this.active
+  //     };
+  //   }
 
-    console.log('dataJson', this.dataJson);
-  }
+  //   console.log('dataJson', this.dataJson);
+  // }
 
   resetAll() {
     this.investmentType = '';
@@ -97,7 +98,7 @@ export class SearchEventsComponent implements OnInit {
     this.active = '';
   }
 
-  checkRadio(data) {
-    console.log(data);
+  openSearchEventsList(){
+    this.router.navigate(['searcheventslist']);
   }
 }

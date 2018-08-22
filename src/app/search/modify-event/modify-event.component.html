@@ -1,0 +1,233 @@
+<div class="panel panel-default" style="margin-left:-3px">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 padding-left-10">
+      <app-breadcrumbs [items]='itemsPath'></app-breadcrumbs>
+    </div>
+  </div>
+  <div class="panel-heading section-padding">
+    <h3 class="panel-title" style="font-size: 24px">Modify Event</h3>
+  </div>
+
+  <div class="panel-body section-padding">
+    <!--<h4>Intermediary</h4>-->
+    <p-accordion>
+      <p-accordionTab header="Intermediary" [selected]="flag">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Intermediary</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
+                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Intermediary ID</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.name = $event' [selectedItem]='name'></app-dropdown>-->
+                  <app-input (inputTextSelected)='this.intermediaryId = $event' #inputintermediaryId [value]='intermediaryId' maxlength="60"></app-input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Investment Type</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
+                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Location</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
+                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Event Type</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
+                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Current Document</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">New Document</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Agreement</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Agreement Type</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Effective Date</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-calender id="calender" class="calWidth" (calenderSelected)='this.endDate = $event' showIcon='true' yearNavigator='true'
+                    monthNavigator='true' yearRange='2000:2030' [inputDate]='endDate'></app-calender>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Event Status</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row paddingTopClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <label class="control-label">Active</label>
+                </div>
+              </div>
+              <div class="row paddingDataClass">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div>
+          <p-table #scr [columns]="colHeaders" [value]="sales" [responsive]="true" [paginator]="true" [rows]="selectedRows" [alwaysShowPaginator]="false"
+            [exportFilename]="this.exportFileName" [loading]="loading" [resizableColumns]="true">
+            <ng-template pTemplate="header" let-columns>
+              <tr>
+                <th class="text-center" *ngFor="let col of columns" [style.width]="col.width" [pSortableColumn]="col.field" pResizableColumn>
+                  {{col.header}}
+                </th>
+              </tr>
+              <tr *ngIf="filterable && sales && sales.length > 0">
+                <th *ngFor="let col of columns" [style.width]="col.width">
+
+                  <input pInputText type="text" placeholder="Filter" (input)="scr.filter($event.target.value, col.field, col.filterMatchMode)">
+
+                </th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-car>
+              <tr>
+                <td class="text-center">
+                  <a class="hyperlink displaycolor" (click)="openModifyEvent()">{{car.brand}}</a>
+                </td>
+                <td class="text-center">{{car.brand}}</td>
+                <td class="text-center">{{car.lastYearProfit}}</td>
+                <td class="text-center">{{car.lastYearProfit}}</td>
+                <td class="text-center">{{car.brand}}</td>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="paginatorright" let-state>
+              <app-dropdown [datasource]='displayRows' (selectedItemChange)='checkAndEnablePage($event)' [selectedItem]='selectedRows'></app-dropdown>
+            </ng-template>
+          </p-table>
+        </div>
+        <div *ngIf="!isPaginator">
+          <app-dropdown [datasource]='displayRows' (selectedItemChange)='checkAndEnablePage($event)' [selectedItem]='selectedRows'></app-dropdown>
+        </div>
+        <br>
+        <div class="row addCheckListButtons">
+          <div class="col-sm-8 col-md-8 col-lg-8">
+            <!--<app-button (click)="openSearchEventsList()" [disabled]='disable()' label="Search" styleClass='button-action'></app-button>-->
+            <app-button (click)="openSearchEventsList()" label="Modify Event" styleClass='button-action'></app-button>
+            <app-button (click)="resetAll()" label="Clear All" styleClass='button-action'></app-button>
+          </div>
+        </div>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+</div>
