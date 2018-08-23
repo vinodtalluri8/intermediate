@@ -60,27 +60,27 @@ export class SearchEventsComponent implements OnInit {
     }
   }
 
-  // saveData() {
-  //   if (!this.disable()) {
-  //     this.dataJson = {
-  //         'investmentType' : this.investmentType,
-  //         'intermediateType' : this.intermediateType,
-  //         'location' : this.location,
-  //         'name' : this.name,
-  //         'status' : this.status,
-  //         'id' : this.id,
-  //         'agreementType' : this.agreementType,
-  //         'agreement' : this.agreement,
-  //         'event' : this.event,
-  //         'startDate' : this.startDate,
-  //         'eventStatus' : this.eventStatus,
-  //         'endDate' : this.endDate,
-  //         'active' : this.active
-  //     };
-  //   }
-
-  //   console.log('dataJson', this.dataJson);
-  // }
+  saveData() {
+    if (!this.disable()) {
+      this.dataJson = {
+          'investmentType' : this.investmentType,
+          'intermediateType' : this.intermediateType,
+          'location' : this.location,
+          'name' : this.name,
+          'status' : this.status,
+          'id' : this.id,
+          'agreementType' : this.agreementType,
+          'agreement' : this.agreement,
+          'event' : this.event,
+          'startDate' : this.startDate,
+          'eventStatus' : this.eventStatus,
+          'endDate' : this.endDate,
+          'active' : this.active
+      };
+    }
+    this.router.navigate(['searcheventslist']);
+    console.log('dataJson', this.dataJson);
+  }
 
   resetAll() {
     this.investmentType = '';
@@ -98,7 +98,7 @@ export class SearchEventsComponent implements OnInit {
     this.active = '';
   }
 
-  openSearchEventsList(){
-    this.router.navigate(['searcheventslist']);
-  }
+  // openSearchEventsList(){
+  //   this.router.navigate(['searcheventslist']);
+  // }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, SelectItem, Message } from 'primeng/api';
-import { MockDataService } from "../../services/mock-data.service";
+import { MockDataService } from "../../../services/mock-data.service";
+
 
 @Component({
   selector: 'app-modify-event',

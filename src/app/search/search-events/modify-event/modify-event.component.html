@@ -182,8 +182,12 @@
             </div>
           </div>
         </div>
-        <br>
-        <div>
+        
+        
+      </p-accordionTab>
+    </p-accordion>
+    <br>
+    <div>
           <p-table #scr [columns]="colHeaders" [value]="sales" [responsive]="true" [paginator]="true" [rows]="selectedRows" [alwaysShowPaginator]="false"
             [exportFilename]="this.exportFileName" [loading]="loading" [resizableColumns]="true">
             <ng-template pTemplate="header" let-columns>
@@ -227,7 +231,5 @@
             <app-button (click)="resetAll()" label="Clear All" styleClass='button-action'></app-button>
           </div>
         </div>
-      </p-accordionTab>
-    </p-accordion>
   </div>
 </div>

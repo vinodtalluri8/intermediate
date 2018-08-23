@@ -29,7 +29,7 @@ export class SearchDocumentsComponent implements OnInit {
   dataJson;
   itemsPath: MenuItem[];
 
-  constructor(private mockService: MockDataService) {
+  constructor(private mockService: MockDataService, private router : Router) {
     this.itemsPath = [
       { label: 'Search' },
       { label: 'Search Documents' }];
@@ -79,7 +79,7 @@ export class SearchDocumentsComponent implements OnInit {
         'fileName': this.fileName
       };
     }
-
+    this.router.navigate(['searchdocumentslist']);
     console.log('dataJson', this.dataJson);
   }
 
