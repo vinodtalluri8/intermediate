@@ -21,7 +21,9 @@ import { SearchDocumentsComponent } from './search/search-documents/search-docum
 import { SearchEventsListComponent } from "./search/search-events/search-events-list/search-events-list.component";
 import { ModifyEventComponent } from "./search/search-events/modify-event/modify-event.component";
 import { SearchDocumentsListComponent } from './search/search-documents/search-documents-list/search-documents-list.component';
-
+import { CreateEventResultsComponent } from './create/create-event/create-event-results/create-event-results.component';
+import { RouterModule } from '@angular/router';
+import { CreateListEventComponent } from './create/create-event/create-list-event/create-list-event.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +36,13 @@ import { SearchDocumentsListComponent } from './search/search-documents/search-d
     SearchDocumentsComponent,
     SearchEventsListComponent,
     ModifyEventComponent,
-    SearchDocumentsListComponent
+    SearchDocumentsListComponent,
+    CreateEventResultsComponent,
+    CreateListEventComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     CoreModule,
     AngularFontAwesomeModule,
     SharedModule,

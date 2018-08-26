@@ -100,7 +100,8 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.effectiveDate = $event' [selectedItem]='effectiveDate'></app-dropdown>
+              <app-calender id="calender" class="calWidth" (calenderSelected)='this.effectiveDate = $event' showIcon='true' yearNavigator='true'
+                monthNavigator='true' yearRange='2000:2030' [inputDate]='effectiveDate'></app-calender>
             </div>
           </div>
         </div>

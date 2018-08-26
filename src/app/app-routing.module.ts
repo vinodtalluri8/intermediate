@@ -9,16 +9,21 @@ import { SearchDocumentsComponent } from "./search/search-documents/search-docum
 import { SearchEventsListComponent } from "./search/search-events/search-events-list/search-events-list.component";
 import { ModifyEventComponent } from "./search/search-events/modify-event/modify-event.component";
 import { SearchDocumentsListComponent } from "./search/search-documents/search-documents-list/search-documents-list.component";
+import { CreateEventResultsComponent } from "./create/create-event/create-event-results/create-event-results.component";
+import { CreateListEventComponent } from "./create/create-event/create-list-event/create-list-event.component";
 
 
 const routes: Routes = [
-  { path:'createevent', component: CreateEventComponent},
+  { path:'createevent', component: CreateEventComponent, children:[
+    { path:'createeventresults', component: CreateEventResultsComponent}
+  ]},
   { path:'createglobalregistration', component: CreateGlobalRegistrationComponent},
   { path:'searchevents', component: SearchEventsComponent},
   { path:'searchdocuments', component: SearchDocumentsComponent},
   { path:'searcheventslist', component: SearchEventsListComponent},
   { path:'modifyevent', component: ModifyEventComponent},
-  { path:'searchdocumentslist', component: SearchDocumentsListComponent}
+  { path:'searchdocumentslist', component: SearchDocumentsListComponent},
+  { path:'createlistevent', component: CreateListEventComponent}
   ];
 
 @NgModule({

@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { Router } from '@angular/router';
-import { MockDataService } from "../../../services/mock-data.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-search-documents-list',
-  templateUrl: './search-documents-list.component.html',
-  styleUrls: ['./search-documents-list.component.css']
+  selector: 'app-create-event-results',
+  templateUrl: './create-event-results.component.html',
+  styleUrls: ['./create-event-results.component.css']
 })
-export class SearchDocumentsListComponent implements OnInit {
+export class CreateEventResultsComponent implements OnInit {
 
-sales;
+ sales;
   isPaginator;
   filterable;
   exportFileName;
@@ -18,23 +16,23 @@ sales;
   loading;
   displayRows;
   colHeaders;
-  itemsPath: MenuItem[];
-  home: MenuItem;
+  // itemsPath: MenuItem[];
+  // home: MenuItem;
   mockDropDownData;
   selectedProgram;
 
-    constructor(private mockService: MockDataService, private router: Router) {
+    constructor(private router: Router) {
     this.isPaginator = true;
     this.filterable = true;
     this.exportFileName = 'Checklists Scheduled';
     this.selectedRows = 15;
     this.loading = false;
-    this.home = { icon: 'fa fa-home' };
+    // this.home = { icon: 'fa fa-home' };
 
-    this.itemsPath = [
-      { label: 'Search'},
-      { label: 'Search Documents'},
-      { label: 'Search Documents List'}];
+    // this.itemsPath = [
+    //   { label: 'Search'},
+    //   { label: 'Search Documents'},
+    //   { label: 'Search Documents List'}];
 
     this.displayRows = [{ label: '15', value: 15 },
     { label: '20', value: 20 }, { label: '30', value: 30 },
@@ -42,19 +40,10 @@ sales;
 
     this.colHeaders = [
       { field: 'intermediary', header: 'Name' },
-      { field: 'intid', header: 'Int. ID' },
-      { field: 'location', header: 'Location' },
+      { field: 'intid', header: 'ID' },
       { field: 'investmentType', header: 'Investment Type' },
-      { field: 'document', header: 'Document' },
-      { field: 'event', header: 'Event' },
-      { field: 'subEvent', header: 'SubEvent' },
-      { field: 'activity', header: 'Activity' },
-      { field: 'agreement', header: 'Agreement' },
-      { field: 'effectiveDate', header: 'Effective Date' },
-      { field: 'status', header: 'Status' },
-      { field: 'activityNotes', header: 'Activity Notes' },
-      { field: 'activityDate', header: 'Activity Date' },
-      { field: 'active', header: 'Active' }
+      { field: 'location', header: 'Location' },
+      { field: 'document', header: 'Intermediary Type' }
     ];
   }
 
@@ -123,11 +112,11 @@ sales;
             { brand: 'Toshiba', lastYearSale: '75%', thisYearSale: '54%', lastYearProfit: '$21,212', thisYearProfit: '$12,533' }
         ];
 
-      this.mockService.getDropdownData().subscribe(
-      (data) => {
-        this.mockDropDownData = data;
-      }
-    );
+    //   this.mockService.getDropdownData().subscribe(
+    //   (data) => {
+    //     this.mockDropDownData = data;
+    //   }
+    // );
 
   }
     checkAndEnablePage(value: number) {
@@ -140,9 +129,8 @@ sales;
     // console.log(' mesagepage ', this.msgs);
   }
 
-  openModifyEvent(){
-    this.router.navigate(['modifyevent']);
+  openCreateEvent(){
+    this.router.navigate(['createlistevent']);
   }
-
 
 }
