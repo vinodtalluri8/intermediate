@@ -10,7 +10,7 @@ import { MockDataService } from "../../services/mock-data.service";
 })
 export class CreateEventComponent implements OnInit {
 
-   mockDropDownData;
+  mockDropDownData;
   mockMultiDropDownData;
   intermediary;
   location;

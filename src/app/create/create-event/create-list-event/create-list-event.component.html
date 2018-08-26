@@ -18,7 +18,7 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-input (inputTextSelected)='this.name = $event' #inputname [value]='name'
+              <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary'
             maxlength="60"></app-input>
             </div>
           </div>
@@ -31,7 +31,7 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-input (inputTextSelected)='this.name = $event' #inputname [value]='name'
+              <app-input (inputTextSelected)='this.location = $event' #inputlocation [value]='location'
             maxlength="60"></app-input>
             </div>
           </div>
@@ -39,12 +39,12 @@
         <div>
           <div class="row paddingTopClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <label class="control-label">Intermediary ID</label>
+              <label class="control-label">Document</label>
             </div>
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-input (inputTextSelected)='this.name = $event' #inputname [value]='name'
+              <app-input (inputTextSelected)='this.document = $event' #inputdocument [value]='document'
             maxlength="60"></app-input>
             </div>
           </div>
@@ -59,7 +59,7 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-input (inputTextSelected)='this.name = $event' #inputname [value]='name'
+              <app-input (inputTextSelected)='this.intermediaryId = $event' #inputintermediaryId [value]='intermediaryId'
             maxlength="60"></app-input>
             </div>
           </div>
@@ -99,7 +99,7 @@
           </div>
           <div class="row paddingDataClass">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <app-input (inputTextSelected)='this.name = $event' #inputname [value]='name'
+              <app-input (inputTextSelected)='this.investmentType = $event' #inputinvestmentType [value]='investmentType'
             maxlength="60"></app-input>
             </div>
           </div>
@@ -122,7 +122,7 @@
   <br>
   <div class="row addCheckListButtons">
     <div class="col-sm-8 col-md-8 col-lg-8">
-      <app-button (click)="saveData()" routerLink="/createevent/createeventresults" label="Create" styleClass='button-action'></app-button>
+      <app-button (click)="saveData()" routerLink="/createevent/createeventresults"  [disabled]='disable()' label="Create" styleClass='button-action'></app-button>
       <app-button (click)="resetAll()" label="Clear All" styleClass='button-action'></app-button>
     </div>
   </div>
