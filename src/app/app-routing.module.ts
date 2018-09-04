@@ -11,6 +11,7 @@ import { ModifyEventComponent } from "./search/search-events/modify-event/modify
 import { SearchDocumentsListComponent } from "./search/search-documents/search-documents-list/search-documents-list.component";
 import { CreateEventResultsComponent } from "./create/create-event/create-event-results/create-event-results.component";
 import { CreateListEventComponent } from "./create/create-event/create-list-event/create-list-event.component";
+import { ModifyActivityComponent } from "./search/search-events/modify-activity/modify-activity.component";
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path:'searcheventslist', component: SearchEventsListComponent},
   { path:'modifyevent', component: ModifyEventComponent},
   { path:'searchdocumentslist', component: SearchDocumentsListComponent},
-  { path:'createlistevent', component: CreateListEventComponent}
+  { path:'createlistevent', component: CreateListEventComponent},
+  { path:'modifyactivity', component: ModifyActivityComponent}
   ];
 
 @NgModule({

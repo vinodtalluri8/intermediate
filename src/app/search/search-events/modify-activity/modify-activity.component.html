@@ -1,0 +1,90 @@
+<div class="panel panel-default" style="margin-left:-3px">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 padding-left-10">
+      <app-breadcrumbs [items]='itemsPath'></app-breadcrumbs>
+    </div>
+  </div>
+  <div class="panel-heading section-padding">
+    <h3 class="panel-title" style="font-size: 24px">Modify Activity</h3>
+  </div>
+  <div class="panel-body section-padding">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-xs-4">
+        <div>
+          <div class="row paddingTopClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="control-label">Activity</label>
+            </div>
+          </div>
+          <div class="row paddingDataClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <app-input (inputTextSelected)='this.activity = $event' #inputactivity [value]='activity' maxlength="60"></app-input>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row paddingTopClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="control-label">Notes</label>
+            </div>
+          </div>
+          <div class="row paddingDataClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <app-input-text-area rowSize='6' (inputTextAreaSelected)='this.notes= $event' [value]='notes' name='control'></app-input-text-area>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-4">
+        
+        <div>
+          <div class="row paddingTopClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="control-label">Current Document</label>
+            </div>
+          </div>
+          <div class="row paddingDataClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <app-input (inputTextSelected)='this.currentDocument = $event' #inputcurrentDocument [value]='currentDocument' maxlength="60"></app-input>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row paddingTopClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="control-label">New Document</label>
+            </div>
+          </div>
+          <div class="row paddingDataClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <app-input (inputTextSelected)='this.newDocument = $event' #inputnewDocument [value]='newDocument' maxlength="60"></app-input>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row paddingTopClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="control-label">Start Date</label>
+            </div>
+          </div>
+          <div class="row paddingDataClass">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+
+              <app-calender id="calender" class="calWidth" (calenderSelected)='this.startdate = $event' showIcon='true' yearNavigator='true'
+                monthNavigator='true' yearRange='2000:2030' [inputDate]='startdate'></app-calender>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row addCheckListButtons">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      <app-button (click)="saveData()" [disabled]='disable()' label="Modify Activity" styleClass='button-action'></app-button>
+      <app-button (click)="resetAll()" label="Clear All" styleClass='button-action'></app-button>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+<router-outlet></router-outlet>

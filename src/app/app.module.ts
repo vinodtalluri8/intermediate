@@ -24,6 +24,7 @@ import { SearchDocumentsListComponent } from './search/search-documents/search-d
 import { CreateEventResultsComponent } from './create/create-event/create-event-results/create-event-results.component';
 import { RouterModule } from '@angular/router';
 import { CreateListEventComponent } from './create/create-event/create-list-event/create-list-event.component';
+import { ModifyActivityComponent } from './search/search-events/modify-activity/modify-activity.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CreateListEventComponent } from './create/create-event/create-list-even
     ModifyEventComponent,
     SearchDocumentsListComponent,
     CreateEventResultsComponent,
-    CreateListEventComponent
+    CreateListEventComponent,
+    ModifyActivityComponent
   ],
   imports: [
     BrowserModule,

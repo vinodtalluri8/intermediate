@@ -51,7 +51,7 @@
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
-                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                  <app-input (inputTextSelected)='this.investmentType = $event' #inputinvestmentType [value]='investmentType' maxlength="60"></app-input>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
-                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                  <app-input (inputTextSelected)='this.location = $event' #inputlocation [value]='location' maxlength="60"></app-input>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
-                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                  <app-input (inputTextSelected)='this.eventType = $event' #inputeventType [value]='eventType' maxlength="60"></app-input>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
+                  <app-input (inputTextSelected)='this.currentDocument = $event' #inputcurrentDocument [value]='currentDocument' maxlength="60"></app-input>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.newDocument = $event' [selectedItem]='newDocument'></app-dropdown>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.agreement = $event' [selectedItem]='agreement'></app-dropdown>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.agreementType = $event' [selectedItem]='agreementType'></app-dropdown>
                 </div>
               </div>
             </div>
@@ -149,8 +149,8 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-calender id="calender" class="calWidth" (calenderSelected)='this.endDate = $event' showIcon='true' yearNavigator='true'
-                    monthNavigator='true' yearRange='2000:2030' [inputDate]='endDate'></app-calender>
+                  <app-calender id="calender" class="calWidth" (calenderSelected)='this.effectiveDate = $event' showIcon='true' yearNavigator='true'
+                    monthNavigator='true' yearRange='2000:2030' [inputDate]='effectiveDate'></app-calender>
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventStatus = $event' [selectedItem]='eventStatus'></app-dropdown>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@
               </div>
               <div class="row paddingDataClass">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventType = $event' [selectedItem]='eventType'></app-dropdown>
+                  <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.active = $event' [selectedItem]='active'></app-dropdown>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@
             <ng-template pTemplate="body" let-car>
               <tr>
                 <td class="text-center">
-                  <a class="hyperlink displaycolor" (click)="openModifyEvent()">{{car.brand}}</a>
+                  <a class="hyperlink displaycolor" (click)="openModifyActivity()">{{car.brand}}</a>
                 </td>
                 <td class="text-center">{{car.brand}}</td>
                 <td class="text-center">{{car.lastYearProfit}}</td>
@@ -227,7 +227,7 @@
         <div class="row addCheckListButtons">
           <div class="col-sm-8 col-md-8 col-lg-8">
             <!--<app-button (click)="openSearchEventsList()" [disabled]='disable()' label="Search" styleClass='button-action'></app-button>-->
-            <app-button (click)="openSearchEventsList()" label="Modify Event" styleClass='button-action'></app-button>
+            <app-button label="Modify Event" styleClass='button-action'></app-button>
             <app-button (click)="resetAll()" label="Clear All" styleClass='button-action'></app-button>
           </div>
         </div>

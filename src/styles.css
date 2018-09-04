@@ -311,3 +311,8 @@ app-input input {
 .mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
     color: black;
 }
+
+.ui-accordion-header.ui-state-default.ui-corner-all.ui-state-active{
+    background: #f6f7f9;
+    border: 1px solid #d9d9d9 !important;
+}
