@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
-import { MockDataService } from "../../../services/mock-data.service";
+import { MockDataService } from '../../../services/mock-data.service';
 
 @Component({
   selector: 'app-search-events-list',
@@ -136,7 +136,7 @@ export class SearchEventsListComponent implements OnInit {
     // console.log(' mesagepage ', this.msgs);
   }
 
-  openModifyEvent(){
+  openModifyEvent() {
     this.router.navigate(['modifyevent']);
   }
 

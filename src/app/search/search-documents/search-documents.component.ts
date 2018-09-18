@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem, SelectItem, Message } from 'primeng/api';
-import { MockDataService } from "../../services/mock-data.service";
+import { MockDataService } from '../../services/mock-data.service';
 
 @Component({
   selector: 'app-search-documents',
@@ -29,7 +29,7 @@ export class SearchDocumentsComponent implements OnInit {
   dataJson;
   itemsPath: MenuItem[];
 
-  constructor(private mockService: MockDataService, private router : Router) {
+  constructor(private mockService: MockDataService, private router: Router) {
     this.itemsPath = [
       { label: 'Search' },
       { label: 'Search Documents' }];

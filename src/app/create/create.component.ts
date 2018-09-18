@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
-import { MockDataService } from "../services/mock-data.service";
+import { MockDataService } from '../services/mock-data.service';
 
 @Component({
   selector: 'app-create',

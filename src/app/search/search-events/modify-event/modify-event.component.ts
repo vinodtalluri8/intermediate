@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, SelectItem, Message } from 'primeng/api';
-import { MockDataService } from "../../../services/mock-data.service";
-import { Router } from "@angular/router";
+import { MockDataService } from '../../../services/mock-data.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -122,7 +122,7 @@ export class ModifyEventComponent implements OnInit {
         'active': this.active
       };
     }
-    
+
     console.log('dataJson', this.dataJson);
   }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MockDataService } from "../../../services/mock-data.service";
+import { MockDataService } from '../../../services/mock-data.service';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
 
