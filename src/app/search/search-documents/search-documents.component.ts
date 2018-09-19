@@ -28,6 +28,7 @@ export class SearchDocumentsComponent implements OnInit {
   fileName;
   dataJson;
   itemsPath: MenuItem[];
+  flag;
 
   constructor(private mockService: MockDataService, private router: Router) {
     this.itemsPath = [

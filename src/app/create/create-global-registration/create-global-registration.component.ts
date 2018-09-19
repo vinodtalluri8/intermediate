@@ -20,6 +20,8 @@ export class CreateGlobalRegistrationComponent implements OnInit {
   agreementType;
   dataJson;
   itemsPath: MenuItem[];
+  flag;
+  name;
 
   constructor(private mockService: MockDataService) {
     this.itemsPath = [

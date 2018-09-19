@@ -28,6 +28,7 @@ export class SearchEventsComponent implements OnInit {
   active;
   dataJson;
   itemsPath: MenuItem[];
+  flag;
 
   constructor(private mockService: MockDataService, private router: Router) {
     this.itemsPath = [
