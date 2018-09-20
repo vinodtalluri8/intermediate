@@ -1,11 +1,11 @@
-<div class="panel panel-default" style="margin-left:-3px">
+<div class="panel panel-default maindivmargin">
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 padding-left-10">
       <app-breadcrumbs [items]='itemsPath'></app-breadcrumbs>
     </div>
   </div>
   <div class="panel-heading section-padding">
-    <h3 class="panel-title" style="font-size: 24px">Modify Event</h3>
+    <h3 class="panel-title">Modify Event</h3>
   </div>
 
   <div class="panel-body section-padding">
@@ -15,12 +15,12 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Intermediary</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
                   <app-input (inputTextSelected)='this.intermediary = $event' #inputintermediary [value]='intermediary' maxlength="60"></app-input>
@@ -28,12 +28,12 @@
               </div>
             </div>
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Intermediary ID</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.name = $event' [selectedItem]='name'></app-dropdown>-->
                   <app-input (inputTextSelected)='this.intermediaryId = $event' #inputintermediaryId [value]='intermediaryId' maxlength="60"></app-input>
@@ -43,12 +43,12 @@
           </div>
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Investment Type</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
                   <app-input (inputTextSelected)='this.investmentType = $event' #inputinvestmentType [value]='investmentType' maxlength="60"></app-input>
@@ -56,12 +56,12 @@
               </div>
             </div>
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Location</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
                   <app-input (inputTextSelected)='this.location = $event' #inputlocation [value]='location' maxlength="60"></app-input>
@@ -71,12 +71,12 @@
           </div>
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Event Type</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <!--<app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.intermediary = $event' [selectedItem]='intermediary'></app-dropdown>-->
                   <app-input (inputTextSelected)='this.eventType = $event' #inputeventType [value]='eventType' maxlength="60"></app-input>
@@ -88,12 +88,12 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Current Document</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-input (inputTextSelected)='this.currentDocument = $event' #inputcurrentDocument [value]='currentDocument' maxlength="60"></app-input>
                 </div>
@@ -104,24 +104,24 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">New Document</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.newDocument = $event' [selectedItem]='newDocument'></app-dropdown>
                 </div>
               </div>
             </div>
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Agreement</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.agreement = $event' [selectedItem]='agreement'></app-dropdown>
                 </div>
@@ -130,24 +130,24 @@
           </div>
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Agreement Type</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.agreementType = $event' [selectedItem]='agreementType'></app-dropdown>
                 </div>
               </div>
             </div>
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Effective Date</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-calender id="calender" class="calWidth" (calenderSelected)='this.effectiveDate = $event' showIcon='true' yearNavigator='true'
                     monthNavigator='true' yearRange='2000:2030' [inputDate]='effectiveDate'></app-calender>
@@ -157,24 +157,24 @@
           </div>
           <div class="col-lg-4 col-md-4 col-xs-4">
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Event Status</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.eventStatus = $event' [selectedItem]='eventStatus'></app-dropdown>
                 </div>
               </div>
             </div>
             <div>
-              <div class="row paddingTopClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="control-label">Active</label>
                 </div>
               </div>
-              <div class="row paddingDataClass">
+              <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <app-dropdown [datasource]='mockDropDownData' (selectedItemChange)='this.active = $event' [selectedItem]='active'></app-dropdown>
                 </div>

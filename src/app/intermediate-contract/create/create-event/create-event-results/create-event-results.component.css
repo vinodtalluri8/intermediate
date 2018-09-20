@@ -112,7 +112,6 @@ app-calender {
 .container{
     padding-left: 34px;
 }
-
-a.displaycolor{
-    color: blue !important;
+h3.panel-title{
+    font-size: 24px !important;
 }
